@@ -8,7 +8,8 @@ The Kernel Audio Distance Toolkit (KADTK) provides an efficient and standardized
 To use the KAD toolkit, you must first install it. This library is created and tested on Python 3.10 on Linux but should work on Python >=3.9,<3.12.
 
 ### 1.1 Install
-Requirement: Install torch [here](https://pytorch.org/) (for [previous versions](https://pytorch.org/get-started/previous-versions/)); only torch >=2.1,<2.6 officially supported.
+Requirement: Install torch [here](https://pytorch.org/) (for [previous versions](https://pytorch.org/get-started/previous-versions/)); only torch >=2.1,<2.6 officially supported. <br/>
+Requirement: Install tensorflow (>=2.0) [here](https://www.tensorflow.org/install); choose the appropriate version for CUDA compatibility [here](https://www.tensorflow.org/install/source#gpu) - note that pip usually does not perform this check.
 
 To install kad toolkit, run:
 ```sh
