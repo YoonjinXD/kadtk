@@ -44,9 +44,9 @@ def calc_kernel_audio_distance(
     x = x.to(dtype=precision, device=device)
     y = y.to(dtype=precision, device=device)
 
-    # Use median distance heuristic if bandwidth not provided
+    # Use median distance heuristic on the reference set if bandwidth not provided
     if bandwidth is None:
-        bandwidth = median_pairwise_distance(y)
+        bandwidth = median_pairwise_distance(x)
 
     m, n = x.shape[0], y.shape[0]
     
